@@ -1,7 +1,9 @@
 currentPath="$(pwd)"
-    rm -rf ~/.tmux.conf
-    ln -s "$currentPath"/.tmux.conf ~/.tmux.conf
-
+for file in .zshrc .tmux.conf
+do
+    rm -rf ~/file
+    ln -s "$currentPath"/file ~/file
+end
     
 for dir in alacritty kitty
 do

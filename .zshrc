@@ -13,6 +13,7 @@
 
 source ~/.zplug/init.zsh
 
+zplug romkatv/powerlevel10k, as:theme, depth:1
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
