@@ -9,7 +9,7 @@
 ##############################################################################
 
 
-source ~/.zplug/init.zsh
+source ~/.zplug/init.zsh && zplug update > /dev/null
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
