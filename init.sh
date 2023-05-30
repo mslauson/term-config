@@ -3,19 +3,24 @@ echo "Do you want to link config directories?"
 options=("Yes" "No" "Quit")
 
 # Prompt the user to select an option
-PS3="Enter your choice (1-$(( ${#options[@]}-1 ))): "
+PS3="Enter your choice (1-${#options[@]}): "
 
 # Display the menu and read the user's choice
 select choice in "${options[@]}"; do
     case $REPLY in
-        yes)
+        1)
            for dir in alacritty kitty
             do
                 rm -rf ~/.config/$dir
                 ln -s "$currentPath"/config/$dir ~/.config/$dir
             done       
             ;;
-        no)
+        2)
+            break
+            ;;
+        3)
+            echo "Goodbye!"
+            exit 0
             break
             ;;
         $(( ${#options[@]} )))
@@ -29,7 +34,7 @@ select choice in "${options[@]}"; do
 done
 
 currentPath="$(pwd)"
-for file in .zshrc .p10k.zsh .tmux.conf .gitconfig
+for file in .zshrc .p10k.zsh .tmux.conf .term_alias.zsh
 do
     rm -rf ~/$file
     ln -s "$currentPath"/$file ~/$file
