@@ -1,5 +1,5 @@
 currentPath="$(pwd)"
-for file in .zshrc .p10k.zsh .tmux.conf
+for file in .zshrc .p10k.zsh .tmux.conf .gitconfig
 do
     rm -rf ~/$file
     ln -s "$currentPath"/$file ~/$file
