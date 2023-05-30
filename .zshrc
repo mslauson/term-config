@@ -11,11 +11,25 @@
 
 source ~/.zplug/init.zsh
 
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
 # PLUGINS
 zplug romkatv/powerlevel10k, as:theme, depth:1
 zplug "plugins/git",   from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "~/.zsh", from:local
+zplug "zsh-users/zsh-autosuggestions", defer:2
+zplug "marlonrichert/zsh-autocomplete", defer:2
+
+# Download Znap, if it's not there yet.
+[[ -r ~/Repos/znap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
+source ~/Repos/znap/znap.zsh  # Start Znap
+
+
+znap source marlonrichert/zsh-autocomplete
+
+# zplug "~/.zsh", from:local
 
 # Group dependencies
 # Load "emoji-cli" if "jq" is installed in this example
