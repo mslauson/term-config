@@ -17,7 +17,6 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug romkatv/powerlevel10k, as:theme, depth:1
 zplug "plugins/git",   from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-autosuggestions", defer:2
 zplug "marlonrichert/zsh-autocomplete", defer:2
 
 # Download Znap, if it's not there yet.
@@ -27,7 +26,7 @@ zplug "marlonrichert/zsh-autocomplete", defer:2
 source ~/Repos/znap/znap.zsh  # Start Znap
 
 
-znap source marlonrichert/zsh-autocomplete
+# znap source marlonrichert/zsh-autocomplete
 
 # zplug "~/.zsh", from:local
 
@@ -61,15 +60,8 @@ export NVM_DIR="$HOME/.nvm"
 # bun completions
 [ -s "/home/matthewslauson/.bun/_bun" ] && source "/home/matthewslauson/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$HOME/emacs.d/bin:$PATH"
-export PATH="$HOME/.config/emacs/bin:$PATH"
 
 alias ls="exa"
-eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
 
 # # Install plugins if there are plugins that have not been installed
 # if ! zplug check --verbose; then
@@ -91,7 +83,6 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/matthewslauson/.zshrc'
 
 autoload -Uz compinit
 compinit
