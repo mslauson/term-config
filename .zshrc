@@ -9,35 +9,23 @@
 ##############################################################################
 
 
-source ~/.zplug/init.zsh && zplug update > /dev/null
-
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-
-# PLUGINS
-zplug romkatv/powerlevel10k, as:theme, depth:1
-zplug "plugins/git",   from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-# zplug "marlonrichert/zsh-autocomplete", defer:2
 
 # Download Znap, if it's not there yet.
 [[ -r ~/Repos/znap/znap.zsh ]] ||
     git clone --depth 1 -- \
         https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
 source ~/Repos/znap/znap.zsh  # Start Znap
+znap source romkatv/powerlevel10k
 
+znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
 
+znap source marlonrichert/zsh-hist
 znap source marlonrichert/zsh-autocomplete
+znap source marlonrichert/zcolors
+znap eval zcolors "zcolors ${(q)LS_COLORS}"
 
-# zplug "~/.zsh", from:local
-
-# Group dependencies
-# Load "emoji-cli" if "jq" is installed in this example
-zplug "stedolan/jq", \
-    from:gh-r, \
-    as:command, \
-    rename-to:jq
-zplug "b4b4r07/emoji-cli", \
-    on:"stedolan/jq"
+ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
+znap source zsh-users/zsh-syntax-highlighting
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
