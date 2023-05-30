@@ -14,15 +14,19 @@
 [[ -r ~/Repos/znap/znap.zsh ]] ||
     git clone --depth 1 -- \
         https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
+
 source ~/Repos/znap/znap.zsh  # Start Znap
-znap source romkatv/powerlevel10k
 
-znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
-
+znap source marlonrichert/zsh-edit
 znap source marlonrichert/zsh-hist
 znap source marlonrichert/zsh-autocomplete
 znap source marlonrichert/zcolors
 znap eval zcolors "zcolors ${(q)LS_COLORS}"
+
+znap source romkatv/powerlevel10k
+znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
+znap source MefitHp/alias-maker
+znap source Junker/zsh-archlinux
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
 znap source zsh-users/zsh-syntax-highlighting
