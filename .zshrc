@@ -72,7 +72,7 @@ alias ls="exa"
 # fi
 #
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load 
 
 
 # Lines configured by zsh-newuser-install
