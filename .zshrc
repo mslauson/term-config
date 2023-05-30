@@ -17,7 +17,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug romkatv/powerlevel10k, as:theme, depth:1
 zplug "plugins/git",   from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "marlonrichert/zsh-autocomplete", defer:2
+# zplug "marlonrichert/zsh-autocomplete", defer:2
 
 # Download Znap, if it's not there yet.
 [[ -r ~/Repos/znap/znap.zsh ]] ||
@@ -26,7 +26,7 @@ zplug "marlonrichert/zsh-autocomplete", defer:2
 source ~/Repos/znap/znap.zsh  # Start Znap
 
 
-# znap source marlonrichert/zsh-autocomplete
+znap source marlonrichert/zsh-autocomplete
 
 # zplug "~/.zsh", from:local
 
