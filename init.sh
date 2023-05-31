@@ -1,4 +1,15 @@
 currentPath="$(pwd)"
+
+#
+# file="$currentPath/.profile"
+# if [ -f "$file" ]; then
+#     echo " exists."
+# else
+#     echo "File does not exist."
+# fi
+
+git-secret reveal
+
 echo "Do you want to link config directories?"
 # Options for the user
 options=("Yes" "No" "Quit")
