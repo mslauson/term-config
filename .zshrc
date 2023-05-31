@@ -56,6 +56,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=2000
 SAVEHIST=10000
 unsetopt beep
+bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 
