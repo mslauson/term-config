@@ -1,3 +1,4 @@
+currentPath="$(pwd)"
 echo "Do you want to link config directories?"
 # Options for the user
 options=("Yes" "No" "Quit")
@@ -14,6 +15,7 @@ select choice in "${options[@]}"; do
                 rm -rf ~/.config/$dir
                 ln -s "$currentPath"/config/$dir ~/.config/$dir
             done       
+	    break
             ;;
         2)
             break
@@ -33,7 +35,6 @@ select choice in "${options[@]}"; do
     esac
 done
 
-currentPath="$(pwd)"
 for file in .zshrc .p10k.zsh .tmux.conf .term_alias.zsh
 do
     rm -rf ~/$file
