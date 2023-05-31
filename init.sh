@@ -35,7 +35,7 @@ select choice in "${options[@]}"; do
     esac
 done
 
-for file in .zshrc .p10k.zsh .tmux.conf .term_alias.zsh
+for file in .profile .zshrc .p10k.zsh .tmux.conf .term_alias.zsh
 do
     rm -rf ~/$file
     ln -s "$currentPath"/$file ~/$file
