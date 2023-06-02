@@ -8,7 +8,8 @@ currentPath="$(pwd)"
 #     echo "File does not exist."
 # fi
 
-git-secret reveal
+# git secret reveal -p ${GIT_SECRET_PASS}
+gsr
 
 echo "Do you want to link config directories?"
 # Options for the user
@@ -46,7 +47,7 @@ select choice in "${options[@]}"; do
     esac
 done
 
-for file in .profile .zshrc .p10k.zsh .tmux.conf .term_alias.zsh
+for file in .gitconfig .profile .zshrc .p10k.zsh .tmux.conf .term_alias.zsh
 do
     rm -rf ~/$file
     ln -s "$currentPath"/$file ~/$file
