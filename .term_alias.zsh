@@ -1,8 +1,8 @@
 
-if test -f ~/.term_alias_secret; then
+if test -f ~/.term_alias_secret.zsh; then
 	echo "Term alias secrets exist. Sourcing..."
-source ~/.term_alias_secret;
-else echo "Profile secrets do not exist. No file will be sourced.";
+source ~/.term_alias_secret.zsh;
+else echo "Term alias secrets do not exist. No file will be sourced.";
 fi
 
 alias ls="exa"
@@ -25,10 +25,10 @@ alias monitorUW='xrandr --output DisplayPort-1 --mode 3440x1440 --primary --rate
 alias monitorLG='xrandr --output DisplayPort-0 --mode 2560x1440 --primary --rate 75.00'
 alias monitorBoth='xrandr --output DisplayPort-0 --mode 2560x1440 --rate 74.97 --output DisplayPort-1 --mode 3440x1440 --primary --rate 144.00 --right-of DisplayPort-0'
 
-alias yeet='yay -Rns'
-alias yoink='yay -Syu'
-alias yass='yay -Syyu'
-alias sheit='yay -Ssyu'
+alias yeet='yay -Rns --noconfirm'
+alias yeeeeee='yay -Syu --noconfirm --needed'
+alias yass='yay -Syyu --noconfirm'
+alias sheit='yay -Ssyu --noconfirm'
 
 alias gEnc='go-encryption encrypt'
 alias gDec='go-encryption decrypt'
@@ -45,5 +45,13 @@ alias testwm='waybar -c $HOME/.config/hypr/component/waybar/config -s $HOME/.con
 alias gsa="git-secret add"
 alias gsl="git-secret list"
 alias gsr="git secret reveal -p ${GIT_SECRET_PASS}"
-alias gsh="${GIT_SECRET_PASS} \| git-secret hide -P"
+alias gsh="git-secret hide -P ${GIT_SECRET_PASS}"
 # alias gsaa="find . -type f -name "*.norg" -print0 | xargs -0 git secret add"
+
+# systemctl
+alias scS="sudo systemctl start"
+alias scR="sudo systemctl restart"
+alias scSt="sudo systemctl stop"
+alias scE="sudo systemctl enable"
+alias scD="sudo systemctl disable"
+alias scDa="sudo systemctl daemon-reload"

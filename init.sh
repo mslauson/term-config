@@ -1,15 +1,9 @@
+!#/bin/bash
+
+gsr
 currentPath="$(pwd)"
 
-#
-# file="$currentPath/.profile"
-# if [ -f "$file" ]; then
-#     echo " exists."
-# else
-#     echo "File does not exist."
-# fi
-
 # git secret reveal -p ${GIT_SECRET_PASS}
-gsr
 
 echo "Do you want to link config directories?"
 # Options for the user
@@ -53,3 +47,22 @@ do
     ln -s "$currentPath"/$file ~/$file
 done
     
+
+pSecret="$currentPath/.profile_secret"
+taSecret="$currentPath/.term_alias_secret.zsh"
+
+if [ -f "$pSecret" ]; then
+    echo "$pSecret exists. Creating symlink"
+    rm -rf ~/.profile_secret
+    ln -s "$currentPath"/.profile_secret ~/.profile_secret
+else
+    echo "Profile secret file available"
+fi
+
+if [ -f "$taSecret" ]; then
+    echo "$taSecret exists. Creating symlink"
+    rm -rf ~/.term_alias_secret.zsh
+    ln -s "$currentPath"/.term_alias_secret.zsh ~/.term_alias_secret.zsh
+else
+    echo "Term alias secret file unavailable"
+fi
