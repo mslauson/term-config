@@ -1,4 +1,10 @@
 
+if test -f ~/.term_alias_secret; then
+	echo "Term alias secrets exist. Sourcing..."
+source ~/.term_alias_secret;
+else echo "Profile secrets do not exist. No file will be sourced.";
+fi
+
 alias ls="exa"
 alias p6pro="emulator -avd Pixel_6_Pro_API_33"
 alias p6="emulator -avd Pixel_6_API_33"
