@@ -55,3 +55,7 @@ alias scSt="sudo systemctl stop"
 alias scE="sudo systemctl enable"
 alias scD="sudo systemctl disable"
 alias scDa="sudo systemctl daemon-reload"
+
+# VPN
+
+alias="sudo openvpn --daemon --config ~/.vpn/blah.ovpn"
