@@ -58,4 +58,4 @@ alias scDa="sudo systemctl daemon-reload"
 
 # VPN
 
-alias="sudo openvpn --daemon --config ~/.vpn/blah.ovpn"
+alias sioVpn="sudo openvpn --daemon --config ~/.vpn/blah.ovpn"
