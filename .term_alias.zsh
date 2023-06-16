@@ -26,9 +26,9 @@ alias monitorLG='xrandr --output DisplayPort-0 --mode 2560x1440 --primary --rate
 alias monitorBoth='xrandr --output DisplayPort-0 --mode 2560x1440 --rate 74.97 --output DisplayPort-1 --mode 3440x1440 --primary --rate 144.00 --right-of DisplayPort-0'
 
 alias yeet='yay -Rns --noconfirm'
-alias yeeeeee='yay -Syu --noconfirm --needed'
-alias yass='yay -Syyu --noconfirm'
-alias sheit='yay -Ssyu --noconfirm'
+alias yoink='yay -Syu --noconfirm --needed'
+alias synergize='yay -Syyu --noconfirm'
+alias inquire='yay -Ssyu --noconfirm'
 
 alias gEnc='go-encryption encrypt'
 alias gDec='go-encryption decrypt'
