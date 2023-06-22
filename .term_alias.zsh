@@ -17,9 +17,11 @@ alias dlv="delv"
 
 alias pApi='cd ~/projects/api'
 alias pApiN='cd ~/projects/api/ndt'
+alias pApiB='cd ~/projects/api/blog'
 alias pConf='cd ~/projects/config'
 alias pLibs='cd ~/projects/libs'
 alias pUi='cd ~/projects/ui'
+alias pBlog='cd ~/projects/ui/blog'
 
 alias monitorUW='xrandr --output DisplayPort-1 --mode 3440x1440 --primary --rate 144.00'
 alias monitorLG='xrandr --output DisplayPort-0 --mode 2560x1440 --primary --rate 75.00'
