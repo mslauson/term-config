@@ -17,6 +17,9 @@ export DB_SCHEMA_CHORE=chore
 export DB_USER_NDT=nd_tasks_srv
 export DB_SCHEMA_NDT=nd_tasks
 
+export DB_USER_NDT=blog_srv
+export DB_SCHEMA_BLOG=blog
+
 export DB_HOST=10.7.2.40
 export DB_NAME=slausonio
 export DB_PASSWORD=$DB_PASSWORD_NDT
@@ -29,8 +32,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export API_AW_BASE=https://k8s.dev.slauson.io/api/aw/v1
 
-export API_BASE_CHORE=https://k8s.dev.slauson.io
-export API_BASE_NDT=https://ndt.k8s.dev.slauson.io
+export API_BASE_CHORE=http://k8s.dev.slauson.io
+export API_BASE_NDT=http://ndt.k8s.dev.slauson.io
+export API_BASE_BLOG=http://blog.k8s.dev.slauson.io
 export API_BASE=$API_BASE_NDT
 
 export LOKI_URL=https://loki.slauson.io
@@ -47,6 +51,8 @@ export IAM_HOST=https://aw.dev.slauson.io/v1
 export IAM_PROJECT_CHORE=sio-chore
 
 export IAM_PROJECT_NDT=nd_tasks
+
+export IAM_PROJECT_NDT=blog
 
 export IAM_KEY=$IAM_KEY_NDT
 export IAM_PROJECT=$IAM_PROJECT_NDT
