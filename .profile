@@ -27,7 +27,7 @@ export JAVA_HOME_17=/usr/lib/jvm/java-17-openjdk
 export JAVA_HOME=$JAVA_HOME_17
 export MAVEN_HOME=/opt/maven/
 export GOPATH="/home/mslauson/go"
-export IAM_HOST=https://aw.dev.slauson.io/v1
+export IAM_HOST=http://aw.dev.slauson.io/v1
 
 
 export IAM_KEY=$IAM_KEY_BLOG
