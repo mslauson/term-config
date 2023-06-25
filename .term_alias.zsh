@@ -20,6 +20,7 @@ alias pApiN='cd ~/projects/api/ndt'
 alias pApiB='cd ~/projects/api/blog'
 alias pConf='cd ~/projects/config'
 alias pLibs='cd ~/projects/libs'
+alias pRest='cd ~/projects/libs/rest'
 alias pUi='cd ~/projects/ui'
 alias pBlog='cd ~/projects/ui/blog'
 
@@ -65,4 +66,4 @@ alias sioVpn="sudo openvpn --daemon --config ~/.vpn/SIO.ovpn"
 
 # docker
 
-alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY"
+alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY -t registry.slauson.io/builder/go-blg:0.1.0 -t registry.slauson.io/builder/go-blg:latest "
