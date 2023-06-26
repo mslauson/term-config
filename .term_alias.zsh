@@ -61,12 +61,17 @@ alias scDa="sudo systemctl daemon-reload"
 
 # VPN
 
-alias sioVpn="sudo openvpn --daemon --config ~/.vpn/SIO.ovpn"
+alias sioVpn="sudo openvpn --daemon --config ~/.vpn/sio.ovpn"
 
 
 # docker
 
 alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY"
 
+#Bitwarden
+
+alias bwSearch="bw list items --search"
+alias bwIntSearch="bw list items --folderid 3ac73be3-e031-44f3-989c-af3f00fb30f8 --search"
+
 #jq
-alias bwCredJq="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
+alias jqBwCred="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
