@@ -39,6 +39,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 export PATH=$PATH:/home/mslauson/Android/Sdk/emulator:/home/mslauson/.local/share/flatpak/app/com.visualstudio.code/current/active/files/bin
+export PATH=$PATH:/home/mslauson/.local/share/JetBrains/Toolbox/scripts
 export PATH=$PATH:/home/mslauson/installs/custom-scripts:/home/mslauson/installs/custom-scripts/computer
 export PATH=$PATH:/home/mslauson/.config/emacs/bin
 export PATH=$PATH:$GOPATH/bin
