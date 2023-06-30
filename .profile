@@ -33,6 +33,8 @@ export IAM_HOST=http://aw.dev.slauson.io/v1
 export IAM_KEY=$IAM_KEY_BLOG
 export IAM_PROJECT=$IAM_PROJECT_BLOG
 
+export REDIS_AUTH=$REDIS_AUTH_INFRA
+
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
