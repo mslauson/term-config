@@ -60,8 +60,11 @@ alias scD="sudo systemctl disable"
 alias scDa="sudo systemctl daemon-reload"
 
 # VPN
-
 alias sioVpn="sudo openvpn --daemon --config ~/.vpn/sio.ovpn"
+
+#Wifi
+alias homeMeSeeks="nmcli device wifi connect $HOME_6E_SSID password $HOME_6E_PW"
+alias sioHotspot="nmcli device wifi connect $PIXEL_HOTSPOT_SSID password $PIXEL_HOTSPOT_PW"
 
 #Kubectl
 alias kdt="kubectl -n kubernetes-dashboard create token admin-user"
