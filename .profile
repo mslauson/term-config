@@ -17,17 +17,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 export API_BASE=$API_BASE_NDT
-
-export LOKI_URL=https://loki.slauson.io
 export ENV=local
-export GOPRIVATE=gitea.slauson.io/slausonio/
+
 export GOTESTS_TEMPLATE=testify
 export JAVA_HOME_19=/usr/lib/jvm/java-19-openjdk
 export JAVA_HOME_17=/usr/lib/jvm/java-17-openjdk
 export JAVA_HOME=$JAVA_HOME_17
 export MAVEN_HOME=/opt/maven/
 export GOPATH="/home/mslauson/go"
-export IAM_HOST=http://aw.dev.slauson.io/v1
 
 
 export IAM_KEY=$IAM_KEY_NDT
