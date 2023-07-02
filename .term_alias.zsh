@@ -63,6 +63,11 @@ alias scDa="sudo systemctl daemon-reload"
 
 alias sioVpn="sudo openvpn --daemon --config ~/.vpn/sio.ovpn"
 
+#Kubectl
+alias kdt="kubectl -n kubernetes-dashboard create token admin-user"
+alias kndt="kubectl -n nd-tasks"
+alias kchre="kubectl -n chore"
+alias kblg="kubectl -n blog"
 
 # docker
 
