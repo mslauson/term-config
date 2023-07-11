@@ -44,6 +44,7 @@ export PATH=$PATH:/home/mslauson/.config/emacs/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/home/mslauson/.cargo/bin
 export PATH=$PATH:/home/mslauson/installs/flutter/bin
+export PATH=$PATH:/home/mslauson/.local/share/bob/nvim-bin
 export PATH=$PATH:/home/mslauson/projects/config/wm-config/hypr/scripts/
 
 
