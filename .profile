@@ -9,15 +9,15 @@ export TERMINAL=kitty
 #export QT_QPA_PLATFORMTHEME=qt5ct
 #export QT_QPA_PLATFORMTHEME=qt6ct
 
-export DB_PASSWORD=$DB_PASSWORD_NDT
-export DB_USER=$DB_USER_NDT
-export DB_SCHEMA=$DB_SCHEMA_NDT
+export DB_PASSWORD=$DB_PASSWORD_BUDGET
+export DB_USER=$DB_USER_BUDGET
+export DB_SCHEMA=$DB_SCHEMA_BUDGET
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-export API_BASE=$API_BASE_NDT
+export API_BASE=$API_BASE_BUDGET
 export ENV=local
 
 export GOTESTS_TEMPLATE=testify
@@ -29,8 +29,8 @@ export GOPATH="/home/mslauson/go"
 export ANDROID_HOME="/home/mslauson/Android/Sdk"
 export ANDROID_NDK_HOME="/home/mslauson/Android/Sdk/ndk/25.2.9519653"
 
-export IAM_KEY=$IAM_KEY_NDT
-export IAM_PROJECT=$IAM_PROJECT_NDT
+export IAM_KEY=$IAM_KEY_BUDGET
+export IAM_PROJECT=$IAM_PROJECT_BUDGET
 
 export REDIS_AUTH=$REDIS_AUTH_INFRA
 
