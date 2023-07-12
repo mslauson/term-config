@@ -17,7 +17,8 @@ alias dlv="delv"
 
 alias pApi='cd ~/projects/api'
 alias pApiN='cd ~/projects/api/ndt'
-alias pApiB='cd ~/projects/api/blog'
+alias pApiBl='cd ~/projects/api/blog'
+alias pApiBu='cd ~/projects/api/budget'
 alias pConf='cd ~/projects/config'
 alias pLibs='cd ~/projects/libs'
 alias pRest='cd ~/projects/libs/rest'
