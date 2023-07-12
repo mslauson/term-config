@@ -26,6 +26,8 @@ export JAVA_HOME_17=/usr/lib/jvm/java-17-openjdk
 export JAVA_HOME=$JAVA_HOME_17
 export MAVEN_HOME=/opt/maven/
 export GOPATH="/home/mslauson/go"
+export ANDROID_HOME="/home/mslauson/Android/Sdk"
+export ANDROID_NDK_HOME="/home/mslauson/Android/Sdk/ndk"
 
 export IAM_KEY=$IAM_KEY_NDT
 export IAM_PROJECT=$IAM_PROJECT_NDT
