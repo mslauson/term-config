@@ -1,7 +1,8 @@
 if test -f ~/.profile_secret; then
 	echo "Profile secrets exist. Sourcing..."
-source ~/.profile_secret;
-else echo "Profile secrets do not exist. No file will be sourced.";
+	source ~/.profile_secret
+else
+	echo "Profile secrets do not exist. No file will be sourced."
 fi
 
 export TERMINAL=kitty
@@ -26,7 +27,6 @@ export JAVA_HOME=$JAVA_HOME_17
 export MAVEN_HOME=/opt/maven/
 export GOPATH="/home/mslauson/go"
 
-
 export IAM_KEY=$IAM_KEY_NDT
 export IAM_PROJECT=$IAM_PROJECT_NDT
 
@@ -40,13 +40,12 @@ export FZF_DEFAULT_OPTS=" \
 export PATH=$PATH:/home/mslauson/Android/Sdk/emulator:/home/mslauson/.local/share/flatpak/app/com.visualstudio.code/current/active/files/bin
 export PATH=$PATH:/home/mslauson/.local/share/JetBrains/Toolbox/scripts
 export PATH=$PATH:/home/mslauson/installs/custom-scripts:/home/mslauson/installs/custom-scripts/computer
-export PATH=$PATH:/home/mslauson/.config/emacs/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/home/mslauson/.cargo/bin
 export PATH=$PATH:/home/mslauson/installs/flutter/bin
+export PATH=$PATH:/opt/flutter/bin
 export PATH=$PATH:/home/mslauson/.local/share/bob/nvim-bin
 export PATH=$PATH:/home/mslauson/projects/config/wm-config/hypr/scripts/
-
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ]; then
