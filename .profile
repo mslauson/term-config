@@ -27,7 +27,7 @@ export JAVA_HOME=$JAVA_HOME_17
 export MAVEN_HOME=/opt/maven/
 export GOPATH="/home/mslauson/go"
 export ANDROID_HOME="/home/mslauson/Android/Sdk"
-export ANDROID_NDK_HOME="/home/mslauson/Android/Sdk/ndk"
+export ANDROID_NDK_HOME="/home/mslauson/Android/Sdk/ndk/25.2.9519653"
 
 export IAM_KEY=$IAM_KEY_NDT
 export IAM_PROJECT=$IAM_PROJECT_NDT
@@ -43,6 +43,7 @@ export PATH=$PATH:/home/mslauson/Android/Sdk/emulator:/home/mslauson/.local/shar
 export PATH=$PATH:/home/mslauson/.local/share/JetBrains/Toolbox/scripts
 export PATH=$PATH:/home/mslauson/installs/custom-scripts:/home/mslauson/installs/custom-scripts/computer
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/home/mslauson/.cargo/bin
 export PATH=$PATH:/home/mslauson/installs/flutter/bin
 export PATH=$PATH:/opt/flutter/bin
