@@ -82,5 +82,10 @@ alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg 
 alias bwSearch="bw list items --search"
 alias bwIntSearch="bw list items --folderid 3ac73be3-e031-44f3-989c-af3f00fb30f8 --search"
 
+# Redis 
+alias redisDev="redis-cli -h redis-dev.intra.slauson.io"
+alias redisProd="redis-cli -h redis-prod.intra.slauson.io"
+alias redisIntra="redis-cli -h redis.intra.slauson.io"
+
 #jq
 alias jqBwCred="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
