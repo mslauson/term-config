@@ -22,7 +22,6 @@ znap source marlonrichert/zsh-hist
 znap source marlonrichert/zsh-autocomplete
 znap source nocttuam/autodotenv
 znap source zshzoo/cd-ls
-znap source eletskiy/zsh-favorite-directories
 znap source lukechilds/zsh-nvm
 znap source kalsowerus/zsh-bitwarden
 # znap source marlonrichert/zsh-autocomplete
