@@ -13,10 +13,6 @@ export DB_PASSWORD=$DB_PASSWORD_NDT
 export DB_USER=$DB_USER_NDT
 export DB_SCHEMA=$DB_SCHEMA_NDT
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
 export API_BASE=$API_BASE_NDT
 export ENV=local
 

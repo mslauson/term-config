@@ -1,0 +1,4 @@
+format = 'all'
+[dart]
+format = 'via [🔰 $version](bold red) '
+
