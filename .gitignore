@@ -1,3 +1,5 @@
 .gitconfig
 .profile_secret
 .term_alias_secret.zsh
+.gitsecret/keys/random_seed
+!*.secret
