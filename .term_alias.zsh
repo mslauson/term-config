@@ -89,3 +89,6 @@ alias redisIntra="redis-cli -h redis.intra.slauson.io"
 
 #jq
 alias jqBwCred="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
+
+alias yubiNano="gpg-connect-agent 'scd 24009623' 'learn --force' /bye"
+alias yubiNfc="gpg-connect-agent 'scd 24747238' 'learn --force' /bye"
