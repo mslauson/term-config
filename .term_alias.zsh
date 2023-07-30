@@ -79,7 +79,7 @@ alias kblg="kubectl -n blog"
 
 # docker
 
-alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg=LOKI_URL=$LOKI_URL --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY --build-arg=ESTIMATE_BASE_URL=$ESTIMATE_BASE_URL"
+alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg=LOKI_URL=$LOKI_URL --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY --build-arg ESTIMATE_BASE_URL=$ESTIMATE_BASE_URL --build-arg REDIS_HOST=$REDIS_HOST --build-arg REDIS_PORT=$REDIS_PORT --build-arg REDIS_PASSWORD=$REDIS_PASSWORD --build-arg REDIS_USERNAME=$REDIS_USERNAME" 
 
 #Bitwarden
 
@@ -87,9 +87,9 @@ alias bwSearch="bw list items --search"
 alias bwIntSearch="bw list items --folderid 3ac73be3-e031-44f3-989c-af3f00fb30f8 --search"
 
 # Redis 
-alias redisDev="redis-cli -h redis-dev.intra.slauson.io"
-alias redisProd="redis-cli -h redis-prod.intra.slauson.io"
-alias redisIntra="redis-cli -h redis.intra.slauson.io"
+alias redisDev="redis-cli -h $REDIS_HOST_DEV -p $REDIS_PORT_DEV -a $REDIS_AUTH_DEV"
+alias redisProd="redis-cli -h $REDIS_HOST_PROD -p $REDIS_PORT_PROD -a $REDIS_AUTH_PROD"
+alias redisIntra="redis-cli -h $REDIS_HOST_INTRA -p $REDIS_PORT_INTRA -a $REDIS_AUTH_INTRA"
 
 #jq
 alias jqBwCred="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
