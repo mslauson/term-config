@@ -28,9 +28,9 @@ export ANDROID_NDK_HOME="/home/mslauson/Android/Sdk/ndk/25.2.9519653"
 export IAM_KEY=$IAM_KEY_NDT
 export IAM_PROJECT=$IAM_PROJECT_NDT
 
-export REDIS_AUTH=$REDIS_AUTH_DEV
-export REDIS_HOST=$REDIS_HOST_DEV
-export REDIS_PORT=$REDIS_PORT_DEV
+export REDIS_AUTH=$REDIS_DEV_AUTH
+export REDIS_HOST=$REDIS_DEV_HOST
+export REDIS_PORT=$REDIS_DEV_PORT
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
