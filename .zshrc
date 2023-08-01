@@ -10,23 +10,19 @@
 
 
 
-# Download Znap, if it's not there yet.
-[[ -r ~/Repos/znap/znap.zsh ]] ||
-    git clone --depth 1 -- \
-        https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
 
 source ~/Repos/znap/znap.zsh  # Start Znap
 
 znap source marlonrichert/zsh-edit
-znap source marlonrichert/zsh-hist
-znap source marlonrichert/zsh-autocomplete
+# znap source marlonrichert/zsh-hist
+# znap source marlonrichert/zsh-autocomplete
 znap source nocttuam/autodotenv
 znap source zshzoo/cd-ls
 znap source lukechilds/zsh-nvm
 znap source kalsowerus/zsh-bitwarden
-# znap source marlonrichert/zsh-autocomplete
+znap source marlonrichert/zsh-autocomplete
 znap source zsh-users/zsh-syntax-highlighting
-# znap source zsh-users/zsh-autosuggestions
+znap source zsh-users/zsh-autosuggestions
  
 znap source marlonrichert/zcolors
 znap eval zcolors "zcolors ${(q)LS_COLORS}"

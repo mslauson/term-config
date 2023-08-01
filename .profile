@@ -47,6 +47,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/home/mslauson/.cargo/bin
 export PATH=$PATH:/home/mslauson/installs/flutter/bin
 export PATH=$PATH:/opt/flutter/bin
+export PATH=$PATH:/home/mslauson/.config/emacs/bin
 export PATH=$PATH:/home/mslauson/.local/share/bob/nvim-bin
 export PATH=$PATH:/home/mslauson/projects/config/wm-config/hypr/scripts/
 
