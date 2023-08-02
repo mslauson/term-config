@@ -20,9 +20,9 @@ znap source nocttuam/autodotenv
 znap source zshzoo/cd-ls
 znap source lukechilds/zsh-nvm
 znap source kalsowerus/zsh-bitwarden
-znap source marlonrichert/zsh-autocomplete
-znap source zsh-users/zsh-syntax-highlighting
-znap source zsh-users/zsh-autosuggestions
+# znap source marlonrichert/zsh-autocomplete
+# znap source zsh-users/zsh-syntax-highlighting
+# znap source zsh-users/zsh-autosuggestions
  
 znap source marlonrichert/zcolors
 znap eval zcolors "zcolors ${(q)LS_COLORS}"
@@ -60,6 +60,9 @@ bindkey -e
 #compinit
 # End of lines added by compinstall
 #
+   source /usr/share/fzf-tab-completion/zsh/fzf-zsh-completion.sh
+	bindkey '^I' fzf_completion
 
+# eval "$(hstdb init)"
 eval "$(starship init zsh)"
 
