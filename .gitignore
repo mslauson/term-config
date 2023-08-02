@@ -3,3 +3,4 @@
 .term_alias_secret.zsh
 .gitsecret/keys/random_seed
 !*.secret
+config/lazygit/state.yml
