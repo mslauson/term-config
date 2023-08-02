@@ -72,7 +72,7 @@ alias homeMeSeeks="nmcli device wifi connect $HOME_6E_SSID password $HOME_6E_PW"
 alias sioHotspot="nmcli device wifi connect $PIXEL_HOTSPOT_SSID password $PIXEL_HOTSPOT_PW"
 
 #Kubectl
-alias kdt="kubectl -n kubernetes-dashboard create token admin-user"
+alias kdt="kubectl -n kubernetes-dashboard create token admin-user | wl-copy"
 alias kndt="kubectl -n nd-tasks"
 alias kchre="kubectl -n chore"
 alias kblg="kubectl -n blog"
