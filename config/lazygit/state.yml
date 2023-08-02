@@ -1,0 +1,45 @@
+lastupdatecheck: 1679809290
+recentrepos:
+    - /home/mslauson/projects/ui/ndt-ui
+    - /home/mslauson/projects/config/wm-config
+    - /home/mslauson/projects/config/term-config
+    - /home/mslauson/projects/api/ndt/tasks-ms
+    - /home/mslauson/projects/actions/sio
+    - /home/mslauson/projects/config/cloud-config
+    - /home/mslauson/projects/actions/git-tag
+    - /home/mslauson/projects/config/astro-config
+    - /home/mslauson/projects/libs/go-utils
+    - /home/mslauson/projects/docker-bases
+    - /home/mslauson/notes
+    - /home/mslauson/projects/config/traefik-config
+    - /home/mslauson/projects/libs/go-types
+    - /home/mslauson/projects/plugins/spring-boot.nvim
+    - /home/mslauson/projects/api/ndt/task-length-ms
+    - /home/mslauson/projects/api/budget/item-ms
+    - /home/mslauson/projects/config/sql
+    - /home/mslauson/installs/custom-scripts
+    - /home/mslauson/projects/libs/go-actions
+    - /home/mslauson/projects/libs/go-testing
+    - /home/mslauson/projects/api/blog/post-ms
+    - /home/mslauson/projects/ui/blog-ui
+    - /home/mslauson/projects/config/gitea-runner-config
+    - /home/mslauson/projects/config/netplan-config
+    - /home/mslauson/projects/api/budget/customer-ms
+    - /home/mslauson/projects/api/budget/iam-ms
+    - /home/mslauson/projects/ui/ndt-ui-go
+    - /home/mslauson/projects/api/ndt/customer-ms
+    - /home/mslauson/projects/api/blog/customer-ms
+    - /home/mslauson/projects/libs/rest
+    - /home/mslauson/projects/api/blog/iam-ms
+    - /home/mslauson/projects/api/ndt/iam-ms
+    - /home/mslauson/projects/api/ndt/group-ms
+    - /home/mslauson/projects/config/vim-config
+    - /home/mslauson/custom/dotfiles
+startuppopupversion: 5
+customcommandshistory:
+    - q
+    - exit
+    - Qa
+    - qa
+    - qa\
+hidecommandlog: true
