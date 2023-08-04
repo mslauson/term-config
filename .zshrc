@@ -63,6 +63,7 @@ bindkey -e
    source /usr/share/fzf-tab-completion/zsh/fzf-zsh-completion.sh
 	bindkey '^I' fzf_completion
 
+ source /usr/share/zsh/plugins/emoji-cli/emoji-cli.zsh
 # eval "$(hstdb init)"
 eval "$(starship init zsh)"
 
