@@ -16,9 +16,17 @@ PS3="Enter your choice (1-${#options[@]}): "
 select choice in "${options[@]}"; do
 	case $REPLY in
 	1)
+
+		echo "Which computer are we on today?" | lolcat
+		COMPUTER="$(gum choose work personal)"
+		echo "Initializing for $COMPUTER"
+
 		for dir in alacritty lazygit kitty; do
 			rm -rf ~/.config/$dir
 			ln -s "$currentPath"/config/$dir ~/.config/$dir
+
+			rm ~/.config/kitty/kitty.conf
+			ln ~/installs/term-config/config/kitty/computer/$COMPUTER/kitty.conf
 		done
 		break
 		;;
