@@ -25,9 +25,9 @@ select choice in "${options[@]}"; do
 			rm -rf ~/.config/$dir
 			ln -s "$currentPath"/config/$dir ~/.config/$dir
 
-			rm ~/.config/kitty/kitty.conf
-			ln ~/installs/term-config/config/kitty/computer/$COMPUTER/kitty.conf
 		done
+		rm ~/.config/kitty/kitty.conf
+		ln ~/installs/term-config/config/kitty/computer/$COMPUTER/kitty.conf ~/.config/kitty/kitty.conf
 		break
 		;;
 	2)
