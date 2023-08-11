@@ -36,6 +36,7 @@ znap source Junker/zsh-archlinux
 ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
 
 
+source ~/.profile
 source ~/.term_alias.zsh
 
 
