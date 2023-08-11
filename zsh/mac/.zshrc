@@ -14,6 +14,7 @@
 source ~/Repos/znap/znap.zsh  # Start Znap
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
+znap prompt sindresorhus/pure
 znap source zsh-users/zsh-syntax-highlighting
 znap source marlonrichert/zsh-edit
 znap source nocttuam/autodotenv
@@ -45,6 +46,5 @@ SAVEHIST=1000000
 unsetopt beep
 bindkey -e
 
-source /usr/share/fzf/completion.zsh
-eval "$(starship init zsh)"
+znal eval "$(starship init zsh)"
 
