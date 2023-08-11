@@ -74,3 +74,7 @@ if [ -f "$taSecret" ]; then
 else
 	echo "Term alias secret file unavailable"
 fi
+
+rm -rf ~/.zsh/themes
+mkdir ~/.zsh/themes
+ln -s "$currentPath"/highlighting-themes/* ~/.zsh/themes
