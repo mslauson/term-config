@@ -23,7 +23,7 @@ znap source lukechilds/zsh-nvm
 znap source kalsowerus/zsh-bitwarden
 znap source zdharma-continuum/fast-syntax-highlighting
 znap source Aloxaf/fzf-tab
-znap source zdharma-continuum/history-search-multi-word
+# znap source zdharma-continuum/history-search-multi-word
 znap source zsh-users/zsh-autosuggestions
 znap source MichaelAquilina/zsh-you-should-use
  
@@ -47,5 +47,5 @@ unsetopt beep
 bindkey -e
 
 source /usr/share/fzf/completion.zsh
-znal eval "$(starship init zsh)"
+znap eval starship "$(starship init zsh)"
 
