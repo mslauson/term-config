@@ -14,6 +14,7 @@
 source ~/Repos/znap/znap.zsh  # Start Znap
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
+znap source zsh-users/zsh-syntax-highlighting
 znap source marlonrichert/zsh-edit
 znap source nocttuam/autodotenv
 znap source zshzoo/cd-ls
@@ -31,7 +32,7 @@ znap eval zcolors "zcolors ${(q)LS_COLORS}"
 znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
 znap source Junker/zsh-archlinux
 
-# ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
+ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
 
 
 source ~/.term_alias.zsh
