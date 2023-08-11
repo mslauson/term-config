@@ -20,32 +20,24 @@ znap source nocttuam/autodotenv
 znap source zshzoo/cd-ls
 znap source lukechilds/zsh-nvm
 znap source kalsowerus/zsh-bitwarden
-# znap source marlonrichert/zsh-autocomplete
-# znap source zsh-users/zsh-syntax-highlighting
-# znap source zsh-users/zsh-autosuggestions
+znap source zdharma-continuum/fast-syntax-highlighting
+znap source Aloxaf/fzf-tab
+znap source zdharma-continuum/history-search-multi-word
+znap source zsh-users/zsh-autosuggestions
+znap source MichaelAquilina/zsh-you-should-use
  
 znap source marlonrichert/zcolors
 znap eval zcolors "zcolors ${(q)LS_COLORS}"
 
-znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
+znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance,fzf}
 znap source Junker/zsh-archlinux
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
-znap source zsh-users/zsh-syntax-highlighting
-#
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-
-# plugins=(git node vscode dotenv zsh-autosuggestions zsh-syntax-highlighting)
 
 source ~/.profile
 source ~/.term_alias.zsh
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#cba6f7,bold"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-
-
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
@@ -67,5 +59,7 @@ bindkey -e
  # 
  # source /usr/share/zsh/plugins/emoji-cli/emoji-cli.zsh
 # eval "$(hstdb init)"
+
+source /usr/share/fzf/completion.zsh
 eval "$(starship init zsh)"
 
