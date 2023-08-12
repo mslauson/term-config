@@ -27,7 +27,7 @@ select choice in "${options[@]}"; do
 
 		done
 		rm ~/.config/kitty/kitty.conf
-		ln ~/installs/term-config/config/kitty/computer/$COMPUTER/kitty.conf ~/.config/kitty/kitty.conf
+		ln ~/projects/config/term-config/config/kitty/computer/$COMPUTER/kitty.conf ~/.config/kitty/kitty.conf
 		break
 		;;
 	2)

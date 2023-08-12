@@ -96,3 +96,9 @@ alias jqBwCred="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
 
 alias yubiNano="gpg-connect-agent 'scd 24009623' 'learn --force' /bye"
 alias yubiNfc="gpg-connect-agent 'scd 24747238' 'learn --force' /bye"
+
+
+
+# fzf
+alias node='node -r /usr/share/fzf-tab-completion/node/fzf-node-completion.js'
+
