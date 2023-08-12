@@ -61,6 +61,10 @@ if [ $COMPUTER != "mac" ]; then
 	echo "Setting up linux specific configs" | lolcat
 	rm -rf ~/.gitconfig
 	ln -s "$currentPath"/.gitconfig ~/.gitconfig
+
+	rm -rf ~/.zsh
+	mkdir -p ~/.zsh/plugins
+	ln -s /usr/share/zsh/plugins ~/.zsh/plugins
 fi
 
 rm -f ~/.config/starship.toml
