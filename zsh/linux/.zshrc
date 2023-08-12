@@ -11,9 +11,10 @@
 
 
 
+source /usr/share/fzf/completion.zsh
+source ~/.zsh/plugins/fzf-tab-git/fzf-tab.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/plugins/fzf-tab-git/fzf-tab.zsh
 
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 # znap source zshzoo/cd-ls
@@ -38,10 +39,9 @@ unsetopt beep
 bindkey -e
 bindkey '^ ' autosuggest-accept
 
-# source /usr/share/fzf/completion.zsh
 
- source /usr/share/fzf-tab-completion/zsh/fzf-zsh-completion.sh
-bindkey '^I' fzf_completion
+ # source /usr/share/fzf-tab-completion/zsh/fzf-zsh-completion.sh
+bindkey '^I' fzf-completion
 
 eval "$(starship init zsh)"
 
