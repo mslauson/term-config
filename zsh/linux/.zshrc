@@ -37,11 +37,11 @@ HISTSIZE=20000
 SAVEHIST=1000000
 unsetopt beep
 bindkey -e
-bindkey '^ ' autosuggest-accept
+# bindkey '^ ' autosuggest-accept
 
 
  # source /usr/share/fzf-tab-completion/zsh/fzf-zsh-completion.sh
-bindkey '^I' fzf-completion
+# bindkey '^I' fzf-completion
 
 eval "$(starship init zsh)"
 
