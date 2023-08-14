@@ -24,8 +24,8 @@ autoload -Uz compinit
 compinit
 
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
-source ~/.profile
-source ~/.term_alias.zsh
+source ~/.profile_mac
+source ~/.term_alias_mac
 
 eval "$(starship init zsh)"
 
