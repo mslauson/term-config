@@ -51,7 +51,7 @@ done
 rm -rf ~/.zshrc
 ln -s "$currentPath"/zsh/$COMPUTER/.zshrc ~/.zshrc
 
-for file in .gitconfig .profile .p10k.zsh .tmux.conf .term_alias.zsh; do
+for file in tmux.conf .term_alias.zsh; do
 	rm -rf ~/$file
 	ln -s "$currentPath"/$file ~/$file
 done
@@ -66,6 +66,11 @@ if [ $COMPUTER != "mac" ]; then
 	mkdir -p ~/.zsh/plugins
 	ln -s /usr/share/zsh/plugins/* ~/.zsh/plugins
 	chmod 777 ~/.zsh/plugins
+
+	for file in .gitconfig .profile; do
+		rm -rf ~/$file
+		ln -s "$currentPath"/$file ~/$file
+	done
 fi
 
 rm -f ~/.config/starship.toml
