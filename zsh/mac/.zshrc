@@ -17,6 +17,7 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "Aloxaf/fzf-tab"
+plug "lukechilds/zsh-nvim"
 
 
 # Load and initialise completion system
