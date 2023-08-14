@@ -51,6 +51,9 @@ done
 rm -rf ~/.zshrc
 ln -s "$currentPath"/zsh/$COMPUTER/.zshrc ~/.zshrc
 
+rm -rf ~/.zshrc_common
+ln -s "$currentPath"/zsh/.zshrc_common ~/.zshrc_common
+
 for file in tmux.conf .term_alias.zsh; do
 	rm -rf ~/$file
 	ln -s "$currentPath"/$file ~/$file
