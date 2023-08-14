@@ -3,6 +3,10 @@
 gsr
 currentPath="$(pwd)"
 
+echo "Which computer are we on today?" | lolcat
+COMPUTER="$(gum choose linux mac)"
+echo "Initializing for $COMPUTER"
+
 # git secret reveal -p ${GIT_SECRET_PASS}
 
 echo "Do you want to link config directories?"
@@ -17,17 +21,13 @@ select choice in "${options[@]}"; do
 	case $REPLY in
 	1)
 
-		echo "Which computer are we on today?" | lolcat
-		COMPUTER="$(gum choose work personal)"
-		echo "Initializing for $COMPUTER"
-
 		for dir in alacritty lazygit kitty; do
 			rm -rf ~/.config/$dir
 			ln -s "$currentPath"/config/$dir ~/.config/$dir
 
 		done
 		rm ~/.config/kitty/kitty.conf
-		ln ~/installs/term-config/config/kitty/computer/$COMPUTER/kitty.conf ~/.config/kitty/kitty.conf
+		ln ~/projects/config/term-config/config/kitty/computer/$COMPUTER/kitty.conf ~/.config/kitty/kitty.conf
 		break
 		;;
 	2)
@@ -48,10 +48,25 @@ select choice in "${options[@]}"; do
 	esac
 done
 
-for file in .gitconfig .profile .zshrc .p10k.zsh .tmux.conf .term_alias.zsh; do
+rm -rf ~/.zshrc
+ln -s "$currentPath"/zsh/$COMPUTER/.zshrc ~/.zshrc
+
+for file in .gitconfig .profile .p10k.zsh .tmux.conf .term_alias.zsh; do
 	rm -rf ~/$file
 	ln -s "$currentPath"/$file ~/$file
 done
+
+if [ $COMPUTER != "mac" ]; then
+
+	echo "Setting up linux specific configs" | lolcat
+	rm -rf ~/.gitconfig
+	ln -s "$currentPath"/.gitconfig ~/.gitconfig
+
+	rm -rf ~/.zsh
+	mkdir -p ~/.zsh/plugins
+	ln -s /usr/share/zsh/plugins/* ~/.zsh/plugins
+	chmod 777 ~/.zsh/plugins
+fi
 
 rm -f ~/.config/starship.toml
 ln -s "$currentPath"/starship.toml ~/.config/starship.toml
