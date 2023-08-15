@@ -1,12 +1,17 @@
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "Aloxaf/fzf-tab"
 plug "lukechilds/zsh-nvm"
-
+plug "akash329d/zsh-alias-finder"
+plug "KulkarniKaustubh/fzf-dir-navigator"
+plug "joshskidmore/zsh-fzf-history-search"
+plug "reegnz/jq-zsh-plugin"
 plug "wintermi/zsh-bob"
+
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
