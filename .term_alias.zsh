@@ -79,8 +79,7 @@ alias kblg="kubectl -n blog"
 
 # docker
 
-alias dbGoApi="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg=LOKI_URL=$LOKI_URL --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY --build-arg ESTIMATE_BASE_URL=$ESTIMATE_BASE_URL --build-arg REDIS_HOST=$REDIS_HOST --build-arg REDIS_PORT=$REDIS_PORT --build-arg REDIS_PASSWORD=$REDIS_PASSWORD --build-arg REDIS_USERNAME=$REDIS_USERNAME" 
-
+alias goBuilder="docker build --build-arg KEY=$KEY --build-arg IV=$IV --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_SCHEMA=$DB_SCHEMA --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID --build-arg OAUTH_CLIENT_SECRET=$OAUTH_CLIENT_SECRET --build-arg OAUTH_ISSUER_BASE=$OAUTH_ISSUER_BASE --build-arg OAUTH_ADMIN_BASE=$OAUTH_ADMIN_BASE --build-arg API_BASE=$API_BASE --build-arg=LOKI_URL=$LOKI_URL --build-arg IAM_HOST=$IAM_HOST --build-arg IAM_PROJECT=$IAM_PROJECT --build-arg IAM_KEY=$IAM_KEY --build-arg ESTIMATE_BASE_URL=$ESTIMATE_BASE_URL --build-arg REDIS_HOST=$REDIS_HOST --build-arg REDIS_PORT=$REDIS_PORT --build-arg REDIS_PASSWORD=$REDIS_PASSWORD --build-arg REDIS_USERNAME=$REDIS_USERNAME" alias goRunner="goBuilder --build-arg GITEA_TOKEN=$GITEA_TOKEN"
 #Bitwarden
 
 alias bwSearch="bw list items --search"
