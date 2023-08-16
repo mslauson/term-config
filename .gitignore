@@ -4,3 +4,4 @@
 .gitsecret/keys/random_seed
 !*.secret
 config/lazygit/state.yml
+config/kitty/kitty.conf
