@@ -12,6 +12,7 @@ source ~/.zshrc_common
 source ~/.profile
 source ~/.term_alias.zsh
 
+bindkey -e
 
 eval "$(starship init zsh)"
 

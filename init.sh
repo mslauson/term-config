@@ -68,6 +68,7 @@ if [ $COMPUTER != "mac" ]; then
 	rm -rf ~/.zsh
 	mkdir -p ~/.zsh/plugins
 	ln -s /usr/share/zsh/plugins/* ~/.zsh/plugins
+	ln -s "$currentPath"/zsh/plugins/* ~/.zsh/plugins
 	chmod 777 ~/.zsh/plugins
 
 	for file in .gitconfig .profile; do

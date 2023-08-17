@@ -13,5 +13,7 @@ plug "joshskidmore/zsh-fzf-history-search"
 plug "reegnz/jq-zsh-plugin"
 plug "wintermi/zsh-bob"
 
+source ~/.zsh/plugins/nvim.zsh
+
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
