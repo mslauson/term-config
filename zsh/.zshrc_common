@@ -17,3 +17,10 @@ source ~/.zsh/plugins/nvim.zsh
 
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
+# Bindings for Ctrl + Left and Ctrl + Right
+bindkey '\e[1;5D' backward-word  # Ctrl + Left
+bindkey '\e[1;5C' forward-word  # Ctrl + Right
+
+# Bindings for Home and End
+bindkey '\e[1~' beginning-of-line  # Home
+bindkey '\e[4~' end-of-line  # End
