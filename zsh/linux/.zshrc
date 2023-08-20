@@ -18,5 +18,11 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     eval $(ssh-agent -s)
 fi
 
+ssh-add -l &>/dev/null
+if [ $? -ne 0 ]; then
+    ssh-add
+fi
+
+
 eval "$(starship init zsh)"
 
