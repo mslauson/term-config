@@ -14,14 +14,9 @@ source ~/.term_alias.zsh
 
 bindkey -e
 
-if [ -z "$SSH_AUTH_SOCK" ]; then
-    eval $(ssh-agent -s)
-fi
-
-ssh-add -l &>/dev/null
-if [ $? -ne 0 ]; then
-    ssh-add
-fi
+# if [ -z "$SSH_AUTH_SOCK" ]; then
+#     eval $(ssh-agent -s)
+# fi
 
 
 eval "$(starship init zsh)"
