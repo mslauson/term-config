@@ -14,6 +14,7 @@ export DB_USER=$DB_USER_NDT
 export DB_SCHEMA=$DB_SCHEMA_NDT
 
 export API_BASE=$API_BASE_NDT
+export ESTIMATE_BASE=$API_BASE_NDT
 export ENV=local
 
 export GOTESTS_TEMPLATE=testify
