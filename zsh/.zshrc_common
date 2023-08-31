@@ -13,7 +13,7 @@ plug "joshskidmore/zsh-fzf-history-search"
 plug "reegnz/jq-zsh-plugin"
 # plug "wintermi/zsh-bob"
 
-source ~/.zsh/plugins/nvim.zsh
+# source ~/.zsh/plugins/nvim.zsh
 
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
@@ -24,3 +24,9 @@ bindkey '\e[1;5C' forward-word  # Ctrl + Right
 # Bindings for Home and End
 bindkey '\e[1~' beginning-of-line  # Home
 bindkey '\e[4~' end-of-line  # End
+
+zmodload zsh/zpty
+# completions
+if [ -d $HOME/.zsh/comp ]; then
+    export FPATH="$HOME/.zsh/comp:$FPATH"
+fi
