@@ -104,3 +104,5 @@ alias yubiNfc="gpg-connect-agent 'scd 24747238' 'learn --force' /bye"
 # fzf
 alias node='node -r /usr/share/fzf-tab-completion/node/fzf-node-completion.js'
 
+#tmux
+alias tks="tmux kill-server"
