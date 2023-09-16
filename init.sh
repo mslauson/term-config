@@ -71,7 +71,7 @@ if [ $COMPUTER != "mac" ]; then
 	ln -s "$currentPath"/zsh/plugins/* ~/.zsh/plugins
 	chmod 777 ~/.zsh/plugins
 
-	for file in .gitconfig .profile; do
+	for file in .gitconfig .profile .pam_environment; do
 		rm -rf ~/$file
 		ln -s "$currentPath"/$file ~/$file
 	done

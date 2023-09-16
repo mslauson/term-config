@@ -1,3 +1,5 @@
+#!/bin/sh
+
 if test -f ~/.profile_secret; then
 	echo "Profile secrets exist. Sourcing..."
 	source ~/.profile_secret
@@ -9,7 +11,7 @@ export TERMINAL=kitty
 #export QT_QPA_PLATFORMTHEME=qt5ct
 #export QT_QPA_PLATFORMTHEME=qt6ct
 
-export DB_PASSWORD=$DB_PASSWORD_NDT
+export DB_PASSWORD="$DB_PASSWORD_NDT"
 export DB_USER=$DB_USER_NDT
 export DB_SCHEMA=$DB_SCHEMA_NDT
 
