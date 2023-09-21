@@ -1,0 +1,42 @@
+---
+default_mode: locked
+keybinds:
+  unbind: true
+  locked:
+    - unbind: true
+    - action: [ SwitchToMode: Normal, ]
+      key: [ Alt: 'b', ]
+  Normal:
+    - action: ["SwitchFocus", "Left"]
+      key: ["Alt-Shift", "Left"]
+    - action: ["SwitchFocus", "Right"]
+      key: ["Alt-Shift", "Right"]
+    - action: ["SwitchFocus", "Down"]
+      key: ["Alt-Shift", "Down"]
+    - action: ["SwitchFocus", "Up"]
+      key: ["Alt-Shift", "Up"]
+    - action: ["SplitHorizontally"]
+      key: ["Alt-Shift", "h"]
+    - action: ["SplitVertically"]
+      key: ["Alt-Shift", "v"]
+    - action: ["New"]
+      scope: "Session"
+      key: ["Alt-Shift", "n"]
+    - action: ["Next"]
+      scope: "Session"
+      key: ["Alt-Shift", "RightBracket"]
+    - action: ["Previous"]
+      scope: "Session"
+      key: ["Alt-Shift", "LeftBracket"]
+    - action: ["New"]
+      scope: "Layout"
+      key: ["Alt-Shift", "t"]
+    - action: ["Next"]
+      scope: "Layout"
+      key: ["Alt-Shift", "Period"]
+    - action: ["Previous"]
+      scope: "Layout"
+      key: ["Alt-Shift", "Comma"]
+    - action: ["Close"]
+      scope: "Layout"
+      key: ["Alt-Shift", "c"]
