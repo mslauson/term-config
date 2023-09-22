@@ -1,5 +1,5 @@
 keybinds {
-unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl o" "Ctrl p"
+unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl o" "Ctrl p" 
 
     shared {
         bind "Alt D" { Detach; }
@@ -10,7 +10,7 @@ shared_except "locked" "search" "scroll" {
   bind "Alt s" {SwitchToMode "Search"; SearchInput 0; }
 }
 shared_except "locked" "search" "scroll" "tab" {
-  bind "Alt t" {SwitchToMode "Tab";  }
+  bind "Alt a" {SwitchToMode "Tab";  }
 }
 
 shared_except "locked"{
@@ -18,7 +18,7 @@ shared_except "locked"{
   bind "Alt L" {SwitchToMode "Locked"; }
   bind "Alt m" {SwitchToMode "Move"; }
   bind "Alt s" {SwitchToMode "Session"; }
-  bind "Alt p" {SwitchToMode "Pane"; }
+  bind "Alt z" {SwitchToMode "Pane"; }
 
   bind "Alt h" {
         LaunchOrFocusPlugin "file:~/.config/zellij/plugins/harpoon.wasm" {
@@ -27,10 +27,7 @@ shared_except "locked"{
     }
 }
 
-shared_among "locked"{
-    bind "Esc" { SwitchToMode "Normal"; }
-
-
+shared_among "normal"{
   }
 
 shared_except "normal" {
