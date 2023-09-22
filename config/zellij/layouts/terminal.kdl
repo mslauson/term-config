@@ -6,4 +6,16 @@ layout {
             //plugin location="file:/Users/Alex/.config/zellij/plugins/statusbar.wasm"
         }
     }
+    tab name="api" {
+        pane split_direction="vertical"{
+            pane{
+              cwd "/home/mslauson/projects/api" 
+                command "nvim"
+              }
+
+          }
+          pane {
+           plugin location="zellij:status-bar"
+        }
+      }
 }
