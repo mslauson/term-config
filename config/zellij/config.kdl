@@ -1,7 +1,6 @@
 keybinds {
 unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl o" "Ctrl p" 
-
-    shared {
+     shared {
         bind "Alt D" { Detach; }
         bind "Alt Q" { Quit; }
     }
@@ -20,8 +19,14 @@ shared_except "locked"{
   bind "Alt s" {SwitchToMode "Session"; }
   bind "Alt z" {SwitchToMode "Pane"; }
 
-  bind "Alt h" {
+  bind "Alt H" {
         LaunchOrFocusPlugin "file:~/.config/zellij/plugins/harpoon.wasm" {
+            floating true; move_to_focused_tab true;
+        }
+    }
+
+  bind "Alt M" {
+        LaunchOrFocusPlugin "file:~/.config/zellij/plugins/multitask.wasm" {
             floating true; move_to_focused_tab true;
         }
     }
@@ -62,6 +67,27 @@ shared_except "normal" {
         bind "n" "Right" { MovePane "Right"; }
     }
 
+    pane {
+        bind "h" "Left" { MoveFocusOrTab "Left"; }
+        bind "l" "Right" { MoveFocusOrTab "Right"; }
+        bind "j" "Down" { MoveFocus "Down"; }
+        bind "k" "Up" { MoveFocus "Up"; }
+       // bind "Down" { NewPane "Down"; SwitchToMode "Normal"; }
+       // bind "Up" { NewPane "Up"; SwitchToMode "Normal"; }
+       // bind "Right" { NewPane "Right"; SwitchToMode "Normal"; }
+        //bind "Left" { NewPane "Left"; SwitchToMode "Normal"; }
+        bind "{" { MovePane "Down"; }
+        bind "}" { MovePane "Up"; }
+        bind "+" { MovePane "Right"; }
+        bind "&" { MovePane "Left"; }
+        bind "g" { SwitchFocus; }
+        bind "x" { CloseFocus; SwitchToMode "Normal"; }
+        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
+        // bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
+        // bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+        // bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
+    }
 }
 
 plugins {
