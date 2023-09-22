@@ -10,7 +10,7 @@ shared_except "locked" "search" "scroll" {
   bind "Alt s" {SwitchToMode "Search"; SearchInput 0; }
 }
 shared_except "locked" "search" "scroll" "tab" {
-  bind "Alt Tab" {SwitchToMode "Tab";  }
+  bind "Alt t" {SwitchToMode "Tab";  }
 }
 
 shared_except "locked"{
