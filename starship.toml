@@ -54,7 +54,6 @@ symbol = ""
 format='[$symbol($version )]($style)'
 
 [nim]
-symbol = " "
 format='[$symbol($version )]($style)'
 
 [rust]
@@ -63,6 +62,8 @@ format='[$symbol($version )]($style)'
 
 [time]
 disabled = false
+format = "[󰥔 $time]($style) "
+style = "bold mauve"
 # palette tables should be last in the config ⚓️
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
