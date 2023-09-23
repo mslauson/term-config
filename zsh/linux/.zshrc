@@ -10,16 +10,18 @@
 
 source ~/.zshrc_common
 source ~/.profile
-source ~/.term_alias.zsh
+source ~/.term_alias
 
 bindkey -e
 
-# GPG_TTY=$(tty)
-# export GPG_TTY
+# Check if ssh-agent is running
+if ! pgrep -q ssh-agent; then
+    eval $(ssh-agent)
+else
+    # If running, set the existing agent's socket info for the current session
+    export SSH_AUTH_SOCK=$(pgrep -a -u "$USER" ssh-agent | tail -n 1 | cut -d' ' -f2)
+fi
 
-# if [ -z "$SSH_AUTH_SOCK" ]; then
-#     eval $(ssh-agent -s)
-# fi
 
 
 eval "$(starship init zsh)"

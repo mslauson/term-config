@@ -1,9 +1,10 @@
+#!/bin/bash
 
-if test -f ~/.term_alias_secret.zsh; then
-	echo "Term alias secrets exist. Sourcing..."
-source ~/.term_alias_secret.zsh;
-else echo "Term alias secrets do not exist. No file will be sourced.";
-fi
+# if test -f ~/.term_alias_secret.zsh; then
+# 	echo "Term alias secrets exist. Sourcing..."
+# source ~/.term_alias_secret.zsh;
+# else echo "Term alias secrets do not exist. No file will be sourced.";
+# fi
 
 alias ls="eza"
 alias p6pro="emulator -avd Pixel_6_Pro_API_33"
@@ -87,7 +88,7 @@ alias goRunner="docker build  --build-arg GITEA_TOKEN=$GITEA_TOKEN"
 alias bwSearch="bw list items --search"
 alias bwIntSearch="bw list items --folderid 3ac73be3-e031-44f3-989c-af3f00fb30f8 --search"
 
-# Redis 
+# Redis
 alias redisDev="redis-cli -h $REDIS_HOST_DEV -p $REDIS_PORT_DEV -a $REDIS_AUTH_DEV"
 alias redisProd="redis-cli -h $REDIS_HOST_PROD -p $REDIS_PORT_PROD -a $REDIS_AUTH_PROD"
 alias redisIntra="redis-cli -h $REDIS_HOST_INTRA -p $REDIS_PORT_INTRA -a $REDIS_AUTH_INTRA"
@@ -99,10 +100,12 @@ alias yubiNanoC="gpg-connect-agent 'scd 24009623' 'learn --force' /bye"
 alias yubiNanoA="gpg-connect-agent 'scd 22748289' 'learn --force' /bye"
 alias yubiNfc="gpg-connect-agent 'scd 24747238' 'learn --force' /bye"
 
-
-
 # fzf
 alias node='node -r /usr/share/fzf-tab-completion/node/fzf-node-completion.js'
 
 #tmux
 alias tks="tmux kill-server"
+
+#ssh
+
+alias sas="eval '\$(ssh-agent)'"
