@@ -108,4 +108,4 @@ alias tks="tmux kill-server"
 
 #ssh
 
-alias sas="eval '\$(ssh-agent)'"
+alias sas="eval '\$(ssh-agent -s)'"
