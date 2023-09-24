@@ -21,7 +21,7 @@ k9s:
   clusters:
     default:
       namespace:
-        active: chore
+        active: nd-tasks
         lockFavorites: false
         favorites:
         - chore
