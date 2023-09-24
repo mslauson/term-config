@@ -1,5 +1,5 @@
 keybinds {
-unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl o" "Ctrl p" 
+unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl j" "Ctrl k" "Ctrl l" "Ctrl o" "Ctrl p" 
      shared {
         bind "Alt D" { Detach; }
         bind "Alt Q" { Quit; }
@@ -96,7 +96,21 @@ plugins {
     strider { path "strider"; }
     compact-bar { path "compact-bar"; }
 }
-
+themes {
+	rose-pine {
+		bg "#191724"
+		fg "#e0def4"
+		red "#eb6f92"
+		green "#31748f"
+		blue "#9ccfd8"
+		yellow "#f6c177"
+		magenta "#c4a7e7"
+		orange "#fe640b"
+		cyan "#ebbcba"
+		black "#26233a"
+		white "#e0def4"
+	}
+}
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // Options:
@@ -123,7 +137,8 @@ pane_frames true
 
 // Choose the theme that is specified in the themes section.
 // Default: default
-theme "catppuccin-mocha"
+//theme "catppuccin-mocha"
+theme "rose-pine"
 
 // The name of the default layout to load on startup
 // Default: "default"
@@ -189,4 +204,4 @@ copy_on_select true
 
 // The folder in which Zellij will look for themes
 //
-// theme_dir "/path/to/my/theme_dir"
+//theme_dir "~/.config/zellij/themes"
