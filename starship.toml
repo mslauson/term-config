@@ -17,6 +17,9 @@ style = "bold peach"
 symbol = " "
 format='[$symbol($version )]($style)'
 
+[dart]
+format='[$symbol($version )]($style)'
+
 [docker_context]
 symbol = " "
 format='[$symbol($version )]($style)'
@@ -52,6 +55,9 @@ format='[$symbol($version )]($style)'
 
 [nodejs]
 symbol = ""
+format='[$symbol($version )]($style)'
+
+[package]
 format='[$symbol($version )]($style)'
 
 [nim]
