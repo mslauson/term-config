@@ -4,7 +4,7 @@ gsr
 currentPath="$(pwd)"
 
 echo "Which computer are we on today?" | lolcat
-COMPUTER="$(gum choose linux mac)"
+COMPUTER="$(gum choose desktop thonk mac)"
 echo "Initializing for $COMPUTER"
 
 # git secret reveal -p ${GIT_SECRET_PASS}
@@ -27,7 +27,7 @@ select choice in "${options[@]}"; do
 
 		done
 		rm ~/.config/kitty/kitty.conf
-		ln "$currentPath"/config/kitty/computer/$COMPUTER/kitty.conf ~/.config/kitty/kitty.conf
+		ln "$currentPath"/config/kitty/computer/"$COMPUTER"/kitty.conf ~/.config/kitty/kitty.conf
 		break
 		;;
 	2)
