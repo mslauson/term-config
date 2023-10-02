@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/fish
 
 # if test -f ~/.term_alias_secret.zsh; then
 # 	echo "Term alias secrets exist. Sourcing..."
