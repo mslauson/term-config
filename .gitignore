@@ -6,3 +6,5 @@
 config/lazygit/state.yml
 config/kitty/kitty.conf
 config/fish/profile_secret.fish
+.profile
+config/fish/profile.fish
