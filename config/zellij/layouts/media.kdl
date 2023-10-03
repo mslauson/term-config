@@ -1,0 +1,55 @@
+//    pane_template name="parent_pane" split="horizontal" {
+//        // the default zellij tab-bar and status bar plugins
+//        pane size=1 borderless=true {
+//            plugin location="zellij:tab-bar"
+//        }
+//        children
+//        pane size=1 borderless=true{
+//            plugin location="zellij:status-bar"
+//        }
+//    }
+//    pane_template  name="media_pane" split="vertical"{
+//      children
+//    }
+//    tab name="Music"  {
+//            parent_pane{
+//              media_pane{
+//                pane{
+//                  command "musikcube"
+//                }
+//                pane{
+//                  command "cava"
+//              }
+//           }
+//    }
+//    }
+layout {
+    tab_template name="media" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane split_direction="vertical" {
+            children
+        }
+    }
+    media name="Music"  split_direction="vertical" {
+                pane{
+                  command "musikcube"
+                }
+                pane{
+                  command "cava"
+              }
+    }
+    media name="News"  split_direction="vertical" {
+           pane split_direction="horizontal"{
+                  pane{
+                    command "wthrr -f w minneapolis -u f"
+                    }
+                  pane{
+                    command "ttylock 5"
+                    }
+              }
+           pane
+    }
+
+}
