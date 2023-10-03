@@ -8,3 +8,4 @@ config/kitty/kitty.conf
 config/fish/profile_secret.fish
 .profile
 config/fish/profile.fish
+.git-credentials
