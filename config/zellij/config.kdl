@@ -1,5 +1,5 @@
 keybinds {
-unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl j" "Ctrl k" "Ctrl l" "Ctrl o" "Ctrl p" 
+unbind "Ctrl s" "Ctrl q" "Ctrl t" "Ctrl g" "Ctrl n" "Ctrl h" "Ctrl j" "Ctrl k" "Ctrl l" "Ctrl o" "Ctrl p" "Alt j" "Alt k" "Alt l" "Alt h" 
      shared {
         bind "Alt D" { Detach; }
         bind "Alt Q" { Quit; }
