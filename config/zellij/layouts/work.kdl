@@ -12,13 +12,13 @@ layout {
     tab name="api" {
             pane{
               cwd "/home/mslauson/projects/api" 
-                command "nvim"
+                //command "nvim"
               }
       }
     tab name="ui" {
             pane{
               cwd "/home/mslauson/projects/ui" 
-                command "nvim"
+                //command "nvim"
               }
 
       }
