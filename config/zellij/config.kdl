@@ -51,14 +51,27 @@ shared_among "tab" "tmux"{
          bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
          bind "x" { CloseTab; SwitchToMode "Normal"; }
          bind "t" { NewTab; SwitchToMode "Normal"; }
-        bind "Tab" { ToggleTab; }
+         bind "Tab" { ToggleTab; }
          bind "H" "Left" { GoToPreviousTab; }
          bind "L" "Right"  { GoToNextTab; }
+         bind "S" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
   }
 
 shared_among "pane" "tmux"{
         bind "F" {ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
+        bind "{" { MovePane "Down"; }
+        bind "}" { MovePane "Up"; }
+        bind "+" { MovePane "Right"; }
+        bind "&" { MovePane "Left"; }
+        bind "\\" { NewPane "Right"; SwitchToMode "normal"; }
+        bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "h" "Left" { MoveFocus "Left"; }
+        bind "l" "Right" { MoveFocus "Right"; }
+        bind "j" "Down" { MoveFocus "Down"; }
+        bind "k" "Up" { MoveFocus "Up"; }
+        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
   }
 
 shared_except "normal" {
@@ -66,7 +79,6 @@ shared_except "normal" {
   }
 
     tab {
-         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
          bind "0" { GoToTab 1; SwitchToMode "Normal"; }
          bind "2" { GoToTab 2; SwitchToMode "Normal"; }
          bind "3" { GoToTab 3; SwitchToMode "Normal"; }
@@ -76,7 +88,6 @@ shared_except "normal" {
          bind "7" { GoToTab 7; SwitchToMode "Normal"; }
          bind "8" { GoToTab 8; SwitchToMode "Normal"; }
          bind "9" { GoToTab 9; SwitchToMode "Normal"; }
-         bind "Tab" { ToggleTab; }
     }
 
     move {
@@ -88,33 +99,12 @@ shared_except "normal" {
     }
 
     pane {
-        bind "h" "Left" { MoveFocusOrTab "Left"; }
-        bind "l" "Right" { MoveFocusOrTab "Right"; }
-        bind "j" "Down" { MoveFocus "Down"; }
-        bind "k" "Up" { MoveFocus "Up"; }
-       // bind "Down" { NewPane "Down"; SwitchToMode "Normal"; }
-       // bind "Up" { NewPane "Up"; SwitchToMode "Normal"; }
-       // bind "Right" { NewPane "Right"; SwitchToMode "Normal"; }
-        //bind "Left" { NewPane "Left"; SwitchToMode "Normal"; }
-        bind "{" { MovePane "Down"; }
-        bind "}" { MovePane "Up"; }
-        bind "+" { MovePane "Right"; }
-        bind "&" { MovePane "Left"; }
-        bind "g" { SwitchFocus; }
-        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-        bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
         // bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         // bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
         // bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
 
     tmux{
-      bind "\\" { NewPane "Right"; SwitchToMode "normal"; }
-      bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "h" "Left" { MoveFocus "Left"; }
-        bind "l" "Right" { MoveFocus "Right"; }
-        bind "j" "Down" { MoveFocus "Down"; }
-        bind "k" "Up" { MoveFocus "Up"; }
       }
 }
 
@@ -170,7 +160,7 @@ theme "catppuccin-mocha"
 
 // The name of the default layout to load on startup
 // Default: "default"
-default_layout "default"
+default_layout "terminal"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
