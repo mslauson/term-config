@@ -39,8 +39,6 @@ shared_except "locked"{
         }
     }
 
-  bind "q" {CloseFocus; SwitchToMode "Normal"; }
-  bind "Q" {CloseTab; SwitchToMode "Normal"; }
   bind "Alt M" {ToggleMouseMode; SwitchToMode "Normal"; }
 }
 
