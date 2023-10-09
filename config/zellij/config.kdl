@@ -50,8 +50,8 @@ shared_among "tab" "tmux"{
          bind "x" { CloseTab; SwitchToMode "Normal"; }
          bind "t" { NewTab; SwitchToMode "Normal"; }
          bind "Tab" { ToggleTab; SwitchToMode "Normal"; }
-         bind "H" "Left" { GoToPreviousTab; SwithToMode "Normal"; }
-         bind "L" "Right"  { GoToNextTab; SwitchToMode "Normal"; }
+         bind "H" "Left" { GoToPreviousTab; }
+         bind "L" "Right"  { GoToNextTab; }
          bind "S" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
   }
 
@@ -74,6 +74,7 @@ shared_among "pane" "tmux"{
 
 shared_except "normal" {
     bind "Esc" { SwitchToMode "Normal"; }
+    bind "Enter" { SwitchToMode "Normal"; }
   }
 
     tab {
