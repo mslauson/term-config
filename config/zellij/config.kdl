@@ -49,9 +49,9 @@ shared_among "tab" "tmux"{
          bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
          bind "x" { CloseTab; SwitchToMode "Normal"; }
          bind "t" { NewTab; SwitchToMode "Normal"; }
-         bind "Tab" { ToggleTab; }
-         bind "H" "Left" { GoToPreviousTab; }
-         bind "L" "Right"  { GoToNextTab; }
+         bind "Tab" { ToggleTab; SwitchToMode "Normal"; }
+         bind "H" "Left" { GoToPreviousTab; SwithToMode "Normal"; }
+         bind "L" "Right"  { GoToNextTab; SwitchToMode "Normal"; }
          bind "S" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
   }
 
@@ -64,10 +64,10 @@ shared_among "pane" "tmux"{
         bind "&" { MovePane "Left"; }
         bind "\\" { NewPane "Right"; SwitchToMode "normal"; }
         bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "h" "Left" { MoveFocus "Left"; }
-        bind "l" "Right" { MoveFocus "Right"; }
-        bind "j" "Down" { MoveFocus "Down"; }
-        bind "k" "Up" { MoveFocus "Up"; }
+        bind "h" "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "l" "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "j" "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "k" "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
   }
