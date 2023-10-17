@@ -64,12 +64,20 @@ shared_among "pane" "tmux"{
         bind "&" { MovePane "Left"; }
         bind "\\" { NewPane "Right"; SwitchToMode "normal"; }
         bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "h" "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
-        bind "l" "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
-        bind "j" "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
-        bind "k" "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "h"  { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "l"  { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "j"  { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "k"  { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
+  }
+
+  shared_among "resize" "tmux"{
+        bind "Up" {Resize "Up"; SwitchToMode "Normal"; }
+        bind "Down" {Resize "Down"; SwitchToMode "Normal"; }
+        bind "Left" {Resize "Left"; SwitchToMode "Normal"; }
+        bind "Right" {Resize "Right"; SwitchToMode "Normal"; }
+
   }
 
 shared_except "normal" {
