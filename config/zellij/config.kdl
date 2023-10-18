@@ -73,10 +73,10 @@ shared_among "pane" "tmux"{
   }
 
   shared_among "resize" "tmux"{
-        bind "Up" {Resize "Up"}
-        bind "Down" {Resize "Down"}
-        bind "Left" {Resize "Left"}
-        bind "Right" {Resize "Right"}
+        bind "Up" {Resize "Up";}
+        bind "Down" {Resize "Down";}
+        bind "Left" {Resize "Left";}
+        bind "Right" {Resize "Right";}
 
   }
 
