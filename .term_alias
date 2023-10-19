@@ -109,3 +109,7 @@ alias tks="tmux kill-server"
 #ssh
 
 alias sas="eval '\$(ssh-agent -s)'"
+
+#cargo
+
+alias cargoPubSio="cargo publish --repository=sio"
