@@ -70,6 +70,7 @@ shared_among "pane" "tmux"{
         bind "k"  { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
+        bind "a" { TogglePaneFrames; }
   }
 
   shared_among "resize" "tmux"{
@@ -158,7 +159,7 @@ simplified_ui false
 // Options:
 //   - true (default)
 //   - false
-pane_frames true
+pane_frames false
 
 // Choose the theme that is specified in the themes section.
 // Default: default

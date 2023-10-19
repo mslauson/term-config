@@ -5,9 +5,6 @@ layout {
             plugin location="zellij:tab-bar"
         }
         children
-          pane size=1 borderless=true{
-           plugin location="zellij:status-bar"
-        }
     }
     tab name="Dotfiles"  {
             pane{
