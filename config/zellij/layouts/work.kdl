@@ -5,21 +5,21 @@ layout {
             plugin location="zellij:tab-bar"
         }
         children
-          pane size=1 borderless=true{
-           plugin location="zellij:status-bar"
-        }
+//          pane size=1 borderless=true{
+ //          plugin location="zellij:status-bar"
+  //      }
     }
-    tab name="api" {
+    tab name="projects" {
             pane{
-              cwd "/home/mslauson/projects/api" 
+              cwd "/home/mslauson/projects" 
                 //command "nvim"
               }
       }
-    tab name="ui" {
-            pane{
-              cwd "/home/mslauson/projects/ui" 
-                //command "nvim"
-              }
-
-      }
+//    tab name="ui" {
+//            pane{
+//              cwd "/home/mslauson/projects/ui" 
+//                //command "nvim"
+//              }
+//
+      //}
 }
