@@ -106,6 +106,10 @@ alias node='node -r /usr/share/fzf-tab-completion/node/fzf-node-completion.js'
 #tmux
 alias tks="tmux kill-server"
 
+#zellij
+alias zjW="zellij -l ~/.config/zellij/layouts/work.kdl a -c work"
+alias zjC="zellij -l ~/.config/zellij/layouts/config.kdl a -c config"
+
 #ssh
 
 alias sas="eval '\$(ssh-agent -s)'"
@@ -113,3 +117,6 @@ alias sas="eval '\$(ssh-agent -s)'"
 #cargo
 
 alias cargoPubSio="cargo publish --repository=sio"
+
+#convenience
+alias gtt="echo $GITEA_TOKEN | wl-copy"
