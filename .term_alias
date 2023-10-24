@@ -89,9 +89,9 @@ alias bwSearch="bw list items --search"
 alias bwIntSearch="bw list items --folderid 3ac73be3-e031-44f3-989c-af3f00fb30f8 --search"
 
 # Redis
-alias redisDev="redis-cli -h $REDIS_HOST_DEV -p $REDIS_PORT_DEV -a $REDIS_AUTH_DEV"
-alias redisProd="redis-cli -h $REDIS_HOST_PROD -p $REDIS_PORT_PROD -a $REDIS_AUTH_PROD"
-alias redisIntra="redis-cli -h $REDIS_HOST_INTRA -p $REDIS_PORT_INTRA -a $REDIS_AUTH_INTRA"
+alias redisDev="redis-cli -h $REDIS_HOST_DEV -p $REDIS_PORT_DEV -a $REDIS_DEV_AUTH"
+alias redisProd="redis-cli -h $REDIS_HOST_PROD -p $REDIS_PORT_PROD -a $REDIS_PROD_AUTH"
+alias redisIntra="redis-cli -h $REDIS_HOST_INTRA -p $REDIS_PORT_INTRA -a $REDIS_INTRA_AUTH"
 
 #jq
 alias jqBwCred="jq -C '[.[] | {name: .name, passwrd: .login.password}]'"
