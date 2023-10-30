@@ -38,8 +38,9 @@ alias inquire='yay -Ssyu --noconfirm'
 alias gEnc='go-encryption encrypt'
 alias gDec='go-encryption decrypt'
 
-alias gou='go get -u ./...'
-alias gog='go get ./...'
+# GO
+alias gou='go get -u'
+alias gog='go get'
 alias gomt='go mod tidy'
 
 alias fcow='fortune -a | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat'
