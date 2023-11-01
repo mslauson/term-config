@@ -47,7 +47,7 @@ shared_among "normal"{
 
 shared_among "tab" "tmux"{
          bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-         bind "x" { CloseTab; SwitchToMode "Normal"; }
+         bind "X" { CloseTab; SwitchToMode "Normal"; }
          bind "t" { NewTab; SwitchToMode "Normal"; }
          bind "Tab" { ToggleTab; SwitchToMode "Normal"; }
          bind "H" "Left" { GoToPreviousTab; }
