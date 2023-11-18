@@ -21,7 +21,7 @@ select choice in "${options[@]}"; do
 	case $REPLY in
 	1)
 
-		for dir in alacritty lazygit fish k9s kitty tea zellij; do
+		for dir in alacritty lazygit fish k9s kitty neofetch tea zellij; do
 			rm -rf ~/.config/$dir
 			ln -s "$currentPath"/config/$dir ~/.config/$dir
 
