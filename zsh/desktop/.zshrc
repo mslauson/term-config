@@ -12,7 +12,6 @@ source ~/.zshrc_common
 source ~/.profile
 source ~/.term_alias
 
-bindkey -e
 
 
 
