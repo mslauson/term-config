@@ -121,5 +121,13 @@ alias sas="eval '\$(ssh-agent -s)'"
 
 alias cargoPubSio="cargo publish --repository=sio"
 
-#convenience
+#####convenience
 alias gtt="echo $GITEA_TOKEN | wl-copy"
+alias sp "source ~/.zshrc"
+
+## Nvim
+alias nvh="nvim ."
+alias nvApi="pApi && nvim ."
+alias nvApiN="pApiN && nvim ."
+alias nvUi="pUi && nvim ."
+alias nvConf="pConf && nvim ."
