@@ -53,7 +53,7 @@ select choice in "${options[@]}"; do
 done
 
 rm -rf ~/.zshrc
-ln -s "$currentPath"/zsh/$COMPUTER/.zshrc ~/.zshrc
+ln -s "$currentPath"/config/zsh/$COMPUTER/.zshrc ~/.zshrc
 
 # rm -rf ~/.zshrc_common
 # ln -s "$currentPath"/zsh/.zshrc_common ~/.zshrc_common
