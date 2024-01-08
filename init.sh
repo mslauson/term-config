@@ -29,7 +29,6 @@ select choice in "${options[@]}"; do
 		rm ~/.config/kitty/kitty.conf
 		ln "$currentPath"/config/kitty/computer/"$COMPUTER"/kitty.conf ~/.config/kitty/kitty.conf
 
-		rm -rf ~/.zsh
 		ln -s "$currentPath"/config/zsh ~/.zsh
 
 		break
@@ -69,11 +68,11 @@ if [ $COMPUTER != "mac" ]; then
 	rm -rf ~/.gitconfig
 	ln -s "$currentPath"/.gitconfig ~/.gitconfig
 
-	rm -rf ~/.zsh
-	mkdir -p ~/.zsh/plugins
-	ln -s /usr/share/zsh/plugins/* ~/.zsh/plugins
-	ln -s "$currentPath"/zsh/plugins/* ~/.zsh/plugins
-	chmod 777 ~/.zsh/plugins
+	# rm -rf ~/.zsh
+	# mkdir -p ~/.zsh/plugins
+	# ln -s /usr/share/zsh/plugins/* ~/.zsh/plugins
+	# ln -s "$currentPath"/zsh/plugins/* ~/.zsh/plugins
+	# chmod 777 ~/.zsh/plugins
 
 	for file in .gitconfig .profile .pam_environment; do
 		rm -rf ~/$file
