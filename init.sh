@@ -4,7 +4,7 @@ gsr
 currentPath="$(pwd)"
 
 echo "Which computer are we on today?" | lolcat
-COMPUTER="$(gum choose desktop thonk mac)"
+COMPUTER="$(gum choose desktop thonk thonk-apt mac)"
 echo "Initializing for $COMPUTER"
 
 # git secret reveal -p ${GIT_SECRET_PASS}
