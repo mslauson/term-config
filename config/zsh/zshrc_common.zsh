@@ -1,4 +1,4 @@
-
+source ~/.zsh/plugins_common.zsh
 
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 

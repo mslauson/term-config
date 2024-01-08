@@ -8,7 +8,8 @@
 #                    ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
 ##############################################################################
 
-source ~/.zshrc_common
+source ~/.zsh/zshrc_common.zsh
+source ~/.zsh/keybinds_common.zsh
 source ~/.profile
 source ~/.term_alias
 
