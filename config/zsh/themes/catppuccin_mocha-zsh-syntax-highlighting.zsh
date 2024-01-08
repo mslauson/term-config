@@ -1,0 +1,1 @@
+/home/mslauson/projects/config/term-config/highlighting-themes/catppuccin_mocha-zsh-syntax-highlighting.zsh

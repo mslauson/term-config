@@ -29,6 +29,7 @@ select choice in "${options[@]}"; do
 		rm ~/.config/kitty/kitty.conf
 		ln "$currentPath"/config/kitty/computer/"$COMPUTER"/kitty.conf ~/.config/kitty/kitty.conf
 
+		rm -rf ~/.zsh
 		ln -s "$currentPath"/config/zsh ~/.zsh
 
 		break
