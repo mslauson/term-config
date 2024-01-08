@@ -10,6 +10,7 @@
 
 source ~/.zsh/zshrc_common.zsh
 source ~/.zsh/keybinds_common.zsh
+source ~/.zsh/plugins/linux.zsh
 source ~/.profile
 source ~/.term_alias
 

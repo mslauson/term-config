@@ -1,0 +1,1 @@
+plug "olrtg/zsh-fvm"
