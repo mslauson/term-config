@@ -12,4 +12,3 @@ plug "reegnz/jq-zsh-plugin"
 
 plug "ChrisPenner/session-sauce"
 plug  "happycod3r/fzf-tools"
-
