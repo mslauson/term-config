@@ -1,2 +1,2 @@
 plug "olrtg/zsh-fvm"
-plug "bonnefoa/kubectl-fzf"
+# plug "bonnefoa/kubectl-fzf"
