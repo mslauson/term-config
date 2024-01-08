@@ -28,6 +28,10 @@ select choice in "${options[@]}"; do
 		done
 		rm ~/.config/kitty/kitty.conf
 		ln "$currentPath"/config/kitty/computer/"$COMPUTER"/kitty.conf ~/.config/kitty/kitty.conf
+
+		rm -rf ~/.zsh
+		ln -s "$currentPath"/config/zsh ~/.zsh
+
 		break
 		;;
 	2)
@@ -51,8 +55,8 @@ done
 rm -rf ~/.zshrc
 ln -s "$currentPath"/zsh/$COMPUTER/.zshrc ~/.zshrc
 
-rm -rf ~/.zshrc_common
-ln -s "$currentPath"/zsh/.zshrc_common ~/.zshrc_common
+# rm -rf ~/.zshrc_common
+# ln -s "$currentPath"/zsh/.zshrc_common ~/.zshrc_common
 
 for file in .tmux.conf .term_alias; do
 	rm -rf ~/$file
