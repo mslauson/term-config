@@ -115,7 +115,7 @@ alias zjC="zellij -l ~/.config/zellij/layouts/config.kdl a -c config"
 
 #ssh
 
-alias sas="eval '\$(ssh-agent -s)'"
+alias sshAgent="eval '\$(ssh-agent -s)' && ssh-agent-start"
 
 #cargo
 
