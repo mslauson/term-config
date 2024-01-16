@@ -2,6 +2,7 @@
 source ~/.zsh/plugins_common.zsh
 
 
+source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # completions
 if [ -d $HOME/.zsh/comp ]; then

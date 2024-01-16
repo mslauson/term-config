@@ -11,3 +11,4 @@ plug "joshskidmore/zsh-fzf-history-search"
 plug "reegnz/jq-zsh-plugin"
 
 plug "ChrisPenner/session-sauce"
+plug "nix-community/nix-zsh-completions"

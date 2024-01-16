@@ -14,7 +14,6 @@ source ~/.zsh/plugins/linux.zsh
 source ~/.profile
 source ~/.term_alias
 
-source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
 

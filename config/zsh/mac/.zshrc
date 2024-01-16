@@ -13,7 +13,6 @@ source ~/.zsh/zshrc_common.zsh
 source ~/.profile_mac
 source ~/.term_alias_mac
 
-source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
 
