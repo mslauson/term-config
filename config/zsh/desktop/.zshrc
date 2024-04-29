@@ -14,6 +14,5 @@ source ~/.zsh/plugins/linux.zsh
 source ~/.profile
 source ~/.term_alias
 
-
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
