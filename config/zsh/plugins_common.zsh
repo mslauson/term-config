@@ -2,7 +2,7 @@
 
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
-plug "zap-zsh/zap-prompt"
+# plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "Aloxaf/fzf-tab"
 plug "akash329d/zsh-alias-finder"
@@ -12,3 +12,7 @@ plug "reegnz/jq-zsh-plugin"
 
 plug "ChrisPenner/session-sauce"
 plug "nix-community/nix-zsh-completions"
+
+plug "wintermi/zsh-golang"
+plug "wintermi/zsh-rust"
+plug "MAHcodes/distro-prompt"

@@ -135,3 +135,6 @@ alias nvConf="pConf && nvim ."
 alias xmrp2p="sudo xmrig --huge-pages-jit \
   --cpu-no-yield --randomx-1gb-pages --randomx-cache-qos \
   -o 127.0.0.1:3333"
+alias xmrp2p_remote="sudo xmrig --huge-pages-jit \
+  --cpu-no-yield --randomx-1gb-pages --randomx-cache-qos \
+  -o 10.21.1.65:3333"
