@@ -138,3 +138,7 @@ alias xmrp2p="sudo xmrig --huge-pages-jit \
 alias xmrp2p_remote="sudo xmrig --huge-pages-jit \
   --cpu-no-yield --randomx-1gb-pages --randomx-cache-qos \
   -o 10.21.1.65:3333"
+
+
+alias hyprlogtty="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log"
+alias hyprloghypr="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 2 | tail -n 1)/hyprland.log"
