@@ -15,4 +15,4 @@ plug "nix-community/nix-zsh-completions"
 
 #plug "wintermi/zsh-golang"
 #plug "wintermi/zsh-rust"
-#plug "MAHcodes/distro-prompt"
+plug "MAHcodes/distro-prompt"
