@@ -139,6 +139,12 @@ alias xmrp2p_remote="sudo xmrig --huge-pages-jit \
   --cpu-no-yield --randomx-1gb-pages --randomx-cache-qos \
   -o 10.21.1.65:3333"
 
-
 alias hyprlogtty="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log"
 alias hyprloghypr="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 2 | tail -n 1)/hyprland.log"
+
+## Ansible
+alias apbWVlt="ansible-playbook --vault-password-file=~/.ansible_pass.txt"
+alias avUcrypt="ansible-vault decrypt --vault-password-file=~/.ansible_pass.txt"
+alias avEncrypt="ansible-vault encrypt --vault-password-file=~/.ansible_pass.txt"
+alias avEdit="ansible-vault edit --vault-password-file=~/.ansible_pass.txt"
+alias avView="ansible-vault view --vault-password-file=~/.ansible_pass.txt"
