@@ -11,7 +11,8 @@
 source ~/.zsh/zshrc_common.zsh
 source ~/.zsh/keybinds_common.zsh
 source ~/.zsh/plugins/linux.zsh
-source ~/.k8s.zsh
+source ~/.zsh/k7s.zsh
+source ~/.zsh/comp/
 source ~/.profile
 source ~/.term_alias
 

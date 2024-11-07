@@ -15,5 +15,6 @@ source ~/.profile
 source ~/.term_alias
 
 # eval "$(starship init zsh)"
-source ~/.k8s.zsh
+source ~/.zsh/k8s.zsh
+source ~/.zsh/comp/
 
