@@ -1,6 +1,7 @@
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 source ~/.zsh/plugins_common.zsh
 source ~/.zsh/helper_functions.zsh
+source ~/.zsh/comp
 
 
 source ~/.zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
