@@ -148,3 +148,9 @@ alias avUcrypt="ansible-vault decrypt --vault-password-file=~/.ansible_pass.txt"
 alias avEncrypt="ansible-vault encrypt --vault-password-file=~/.ansible_pass.txt"
 alias avEdit="ansible-vault edit --vault-password-file=~/.ansible_pass.txt"
 alias avView="ansible-vault view --vault-password-file=~/.ansible_pass.txt"
+
+#kubectl
+alias kctl="kubectl"
+
+##Krew 
+alias krew="kubectl krew"
